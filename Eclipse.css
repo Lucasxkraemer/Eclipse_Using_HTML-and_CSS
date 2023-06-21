@@ -1,0 +1,53 @@
+body{
+    background-color: #282a36;
+    overflow: hidden;
+    animation: ceu 10s infinite linear; 
+}
+.sol{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    height: 12.5rem;
+    width: 12.5rem;
+    background: orange;
+    box-shadow: 0 0 0.625rem orange,
+                0 0 3.75rem orange,
+                0 0 12.5rem yellow,
+                inset 0 0 5rem yellow;
+    transform: translate(-50%, -50%);
+}
+.lua{
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.625rem;
+    border-radius: 50%;
+    height: 12.5rem;
+    width: 12.5rem;
+    background: #0e0f10;
+    box-shadow: inset 0 0 3.125rem rgba(150, 150, 150, 0.2);
+    animation: eclipse 10s infinite linear;
+    transform-origin: 50% 150%;
+}
+@keyframes ceu {
+    0%{
+        background: #80bde3;
+    }
+    60%{
+        background: black;
+    }
+    100%{
+        background: #80bde3;
+    }
+}
+@keyframes eclipse {
+    0%{
+        transform: rotate(-60deg);
+    }
+    90%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(300deg);
+    }
+}
