@@ -1,0 +1,578 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lucasxkraemer/Eclipse_Using_HTML-and_CSS/blob/main/C%C3%A1lculos%20com%20pytho\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Calcular Área da Circunferência\n",
+        "pi = float(3.14)\n",
+        "raio = int(input(\"Insira o raio da circunferência: \"))\n",
+        "\n",
+        "raio_ao_quadrado= raio**2\n",
+        "area = pi*2\n",
+        "\n",
+        "print(\"A área da circunferência é \",area)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yU4o5Ol2rwj7",
+        "outputId": "55faf3f1-35ce-4802-aa34-6c066f1ec497"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira o raio da circunferência: 52\n",
+            "A área da circunferência é  6.28\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Calcular salario líquido\n",
+        "Vh = float(input(\"Insira o valor da hora trabalhada: \")) #Valor hora\n",
+        "Th = float(input(\"Insira o total de horas trabalhadas no mês: \")) #Total horas\n",
+        "\n",
+        "Sb = Vh*Th #Salário bruto\n",
+        "Di = (7.5/100)*Sb #Desconto INSS\n",
+        "Sl = Sb-Di #Salário liquido\n",
+        "\n",
+        "print(\"Seu salário bruto é\",Sb)\n",
+        "print(\"O desconto do INSS é de\",Di)\n",
+        "print(\"Seu salário liquido é\",Sl)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bKSeU-rZsK49",
+        "outputId": "7235f04a-5a24-44ea-cacd-6fd80a05a373"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira o valor da hora trabalhada: 23.50\n",
+            "Insira o total de horas trabalhadas no mês: 200\n",
+            "Seu salário bruto é 4700.0\n",
+            "O desconto do INSS é de 352.5\n",
+            "Seu salário liquido é 4347.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Transformar graus Celsius em Fahrenheit\n",
+        "C = float(input(\"Insira quantos graus Celsius esta fazendo: \"))\n",
+        "F = (9*C + 160)/5\n",
+        "\n",
+        "print(\"São\",C,\"graus Celsius, convertendo para Fahrenheit fica\",F)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CSAaukVbufxp",
+        "outputId": "24c5d85b-6866-4590-a71c-aa67c5c25c25"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira quantos graus esta fazendo: 39.5\n",
+            "São 39.5 graus Celsius, convertendo para Fahrenheit fica 103.1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Transformar graus Fahrenheit em Celsius\n",
+        "F = float(input(\"Insira quantos graus Fahrenheit esta fazendo: \"))\n",
+        "C = (F-32)/1.8\n",
+        "\n",
+        "print(\"São\",F,\"graus Fahrenheit, converntendo para Celsius\",C)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dk0_t4X8vrQe",
+        "outputId": "87731d84-3677-4ad8-9f44-eb68b89db6a8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira quantos graus Fahrenheit esta fazendo: 103.1\n",
+            "São 103.1 graus Fahrenheit, converntendo para Celsius 39.49999999999999\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Calulcar o volume de uma lata\n",
+        "raio_ao_quadrado = float(input(\"Digite o raio da lata: \"))**2\n",
+        "altura = float(input(\"Digite a altura da lata: \"))\n",
+        "\n",
+        "volume = 3.14159*raio*altura\n",
+        "\n",
+        "print(\"O volume da lata é de\",volume)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5kcp_xrLxBkF",
+        "outputId": "954daf65-6dbb-486d-ce73-67be9d6e042f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o raio da lata: 10\n",
+            "Digite a altura da lata: 10\n",
+            "O volume da lata é de 314.159\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Calculo de quantidade de litros de combustivel usado em uma viagem\n",
+        "tempo = float(input(\"Digite o tempo gasto: \"))\n",
+        "velocidade = float(input(\"Digite a velocidade media: \"))\n",
+        "\n",
+        "distancia = tempo*velocidade\n",
+        "litros_gastos = distancia/12\n",
+        "\n",
+        "print(\"Sua velocidade média foi de\",velocidade,\", e seu tempo gasto foi de\",tempo)\n",
+        "print(\"A distancia percorrida foi de\",distancia)\n",
+        "print(\"O total de litros gastos durante a viagem foi de\",litros_gastos)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dzL0uPjvyngZ",
+        "outputId": "2dc4c9ce-abee-4dd2-b431-82a9b5358e75"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o tempo gasto: 25\n",
+            "Digite a velocidade media: 50\n",
+            "Sua velocidade média foi de 50.0 , e seu tempo gasto foi de 25.0\n",
+            "A distancia percorrida foi de 1250.0\n",
+            "O total de litros gastos durante a viagem foi de 104.16666666666667\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Calcúlo de um valor de prestação em atraso\n",
+        "valor = float(input(\"Insira o valor da prestação: \"))\n",
+        "taxa = float(input(\"Insira a taxa da prestação: \"))/100\n",
+        "tempo = float(input(\"Insira o tempo da prestação: \"))\n",
+        "\n",
+        "prestacao = valor + (valor*taxa*tempo)\n",
+        "\n",
+        "print(\"O valor da prestação em atraso é\",prestacao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1NG7ybUU1jTr",
+        "outputId": "6f416b54-3527-4d5d-c2af-b1ee5f4bc8a5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira o valor da prestação: 100\n",
+            "Insira a taxa da prestação: 3.5\n",
+            "Insira o tempo da prestação: 10\n",
+            "O valor da prestação em atraso é 135.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# ler dois valores para variaveis a e b, e troque os valores\n",
+        "a = int(input(\"Insira um valor:\"))\n",
+        "b = int(input(\"Insira um valor:\"))\n",
+        "t = a\n",
+        "\n",
+        "a = b\n",
+        "b = t\n",
+        "\n",
+        "print(a)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7colH6Fg3bXn",
+        "outputId": "a2f68f62-1da4-4ed6-bb04-6db51e781223"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira um valor:10\n",
+            "Insira um valor:5\n",
+            "5\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "''' ler 4 numeros inteiros e apresentar o resultado da adição e multiplicação,\n",
+        "baseado na utilização do conceito da propriedade distributiva, apresentar 12 resultados de saída'''\n",
+        "a = int(input(\"Digite um número inteiro\"))\n",
+        "b = int(input(\"Digite um número inteiro\"))\n",
+        "c = int(input(\"Digite um número inteiro\"))\n",
+        "d = int(input(\"Digite um número inteiro\"))\n",
+        "\n",
+        "adicao1= (a+b)\n",
+        "adicao2= (a+c)\n",
+        "adicao3= (a+d)\n",
+        "adicao4= (b+c)\n",
+        "adicao5= (b+d)\n",
+        "adicao6= (c+d)\n",
+        "\n",
+        "mult1 = (a*b)\n",
+        "mult2 = (a*c)\n",
+        "mult3 = (a*d)\n",
+        "mult4 = (b*c)\n",
+        "mult5 = (b*d)\n",
+        "mult6 = (c*d)\n",
+        "\n",
+        "print(\"O resultado da adição é\", adicao1)\n",
+        "print(\"O resultado da adição é\", adicao2)\n",
+        "print(\"O resultado da adição é\", adicao3)\n",
+        "print(\"O resultado da adição é\", adicao4)\n",
+        "print(\"O resultado da adição é\", adicao5)\n",
+        "print(\"O resultado da adição é\", adicao6)\n",
+        "\n",
+        "print(\"o resultado da multiplicação é\", mult1)\n",
+        "print(\"o resultado da multiplicação é\", mult2)\n",
+        "print(\"o resultado da multiplicação é\", mult3)\n",
+        "print(\"o resultado da multiplicação é\", mult4)\n",
+        "print(\"o resultado da multiplicação é\", mult5)\n",
+        "print(\"o resultado da multiplicação é\", mult6)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WQt6RWJb4tdh",
+        "outputId": "b4a93814-8bbe-4204-c11f-6d7973bf89ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O resultado da adição é 1\n",
+            "O resultado da adição é 2\n",
+            "O resultado da adição é 3\n",
+            "O resultado da adição é 3\n",
+            "O resultado da adição é 4\n",
+            "O resultado da adição é 5\n",
+            "o resultado da multiplicação é 0\n",
+            "o resultado da multiplicação é 0\n",
+            "o resultado da multiplicação é 0\n",
+            "o resultado da multiplicação é 2\n",
+            "o resultado da multiplicação é 3\n",
+            "o resultado da multiplicação é 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Calcule o o volume de uma caixa retangular\n",
+        "altura = float(input(\"Insira a altura da caixa: \"))\n",
+        "comprimento = float(input(\"Insira o comprimento da caixa: \"))\n",
+        "base = float(input(\"Insira a base da caixa: \"))\n",
+        "\n",
+        "volume = base*comprimento*altura\n",
+        "\n",
+        "print(\"O volume da caixa é igual a \",volume)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ly9_72s39c28",
+        "outputId": "4eab95e5-8f10-4727-f198-5dc20a3ebdc8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Insira a altura da caixa: 15\n",
+            "Insira o comprimento da caixa: 5.5\n",
+            "Insira a base da caixa: 10\n",
+            "O volume da caixa é igual a  825.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# quadrado de um numero\n",
+        "numero = int(input(\"insira um número inteiro: \"))\n",
+        "numero_ao_quadrado = numero**2\n",
+        "print(numero,\" ao quadrado é \",numero_ao_quadrado)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jvFPdnYl-0Ez",
+        "outputId": "72597d36-cc2c-4804-fe06-544d00739010"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "insira um número inteiro: 5\n",
+            "5  ao quadrado é  25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Ler dois inteiros e imprimir o resultado do quadrado da diferença do primeiro valor pelo segundo\n",
+        "A = int(input(\"Digite um número inteiro: \"))\n",
+        "B = int(input(\"Digite um número inteiro: \"))\n",
+        "diferenca = (A-B)**2\n",
+        "\n",
+        "print(\"O quadrado da diferença entre\",A,\" e \",B,\" é igual a\", diferenca)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H90udTek_hNE",
+        "outputId": "fc474397-9a23-4d4c-f09b-f6eb055a33e8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 12\n",
+            "digite um número inteiro: 17\n",
+            "O quadrado da diferença entre 12  e  17  é igual a 25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Converter dolar em real\n",
+        "qt_dolar = float(input(\"Digite a quantidade de dolares: \"))\n",
+        "ct_dolar = float(5.03)\n",
+        "dolar_in_real = qt_dolar*ct_dolar\n",
+        "\n",
+        "print(\"O usuario possui\",qt_dolar,\"dolares, a cotação do dolar em real é de\",ct_dolar,\n",
+        "      \"reais, convertendo seus dolares em reais é igual a\",dolar_in_real,\"reais\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ieJCjvl_BL-t",
+        "outputId": "3da2acc2-74f4-4368-8118-f2bb772c70f2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a quantidade de dolares: 100\n",
+            "O usuario possui 100.0 dolares, a cotação do dolar em real é de  5.03 reais, convertendo seus dolares em reais é igual a  503.0 reais\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Convertendo real em dolar\n",
+        "qt_real = float(input(\"Digite a quantidade de reais: \"))\n",
+        "ct_real = float(0.20)\n",
+        "real_in_dolar= qt_real*ct_real\n",
+        "\n",
+        "print(\"O usuario possui\",qt_real,\"reais, a cotação do real em dolar é de\",ct_real,\n",
+        "      \"cents, convertendo seus reais em dolares é igual a\",real_in_dolar,\"dolares\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PB6Oa79EDvRe",
+        "outputId": "831f12fd-cbbb-4e78-fbcc-90f88113ec23"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a quantidade de reais: 100\n",
+            "O usuario possui 100.0 reais, a cotação do real em dolar é de 0.2 cents, convertendo seus reais em dolares é igual a 20.0 dolares\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Imprimir a soma dos quadrados de três valores\n",
+        "A = int(input(\"Digite um numero inteiro: \"))**2\n",
+        "B = int(input(\"Digite um numero inteiro: \"))**2\n",
+        "C = int(input(\"Digite um numero inteiro: \"))**2\n",
+        "\n",
+        "soma = A+B+C\n",
+        "\n",
+        "print(\"a soma dos quadrados é igual a\",soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g3rrKtp8EvYX",
+        "outputId": "81af00e4-70cb-4bef-d60f-b5b4d6a0f441"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um numero inteiro: 7\n",
+            "Digite um numero inteiro: 7\n",
+            "Digite um numero inteiro: 7\n",
+            "a soma dos quadrados é igual a 147\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Imprimir o quadrado da soma de três valores\n",
+        "A = int(input(\"Digite um numero inteiro: \"))\n",
+        "B = int(input(\"Digite um numero inteiro: \"))\n",
+        "C = int(input(\"Digite um numero inteiro: \"))\n",
+        "\n",
+        "quadrado_da_soma = (A+B+C)**2\n",
+        "\n",
+        "print(\"O quadrado da soma é igual a\", quadrado_da_soma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_efZ0TWJFw0X",
+        "outputId": "f574c914-4bd2-4d24-a0f9-2bfaedbcb07f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um numero inteiro: 10\n",
+            "Digite um numero inteiro: 10\n",
+            "Digite um numero inteiro: 10\n",
+            "O quadrado da soma é igual a 900\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-7bAhKuuLvWs"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
